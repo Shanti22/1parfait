@@ -4,7 +4,16 @@
   .card {
     margin-bottom: 20px;
   }
-
+.cover-image{
+  width: 100%;
+  height: auto;
+}
+.cover-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
 
    /* Definir animaciones */
    @keyframes fade-in {

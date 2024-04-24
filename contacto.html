@@ -6,11 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Titulo - Mi Sitio Web</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    .nav-link.active {
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
@@ -45,6 +41,9 @@
   </div>
 </nav>
 
+<div class="cover-container">
+  <img src="img/image01.png" alt="" class="cover-image">
+</div>
 <div class="container mt-4">
   <h1>Contenido de la página</h1>
   <p>Este es el contenido de la página. Puedes personalizarlo según tus necesidades.</p>
@@ -53,13 +52,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function(){
-    // Marcar la página activa en el navbar
-    var url = window.location.pathname;
-    var filename = url.substring(url.lastIndexOf('/')+1);
-    $('.navbar-nav a[href="'+filename+'"]').addClass('active');
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
