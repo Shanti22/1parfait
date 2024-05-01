@@ -61,3 +61,7 @@
   .fade-in-right {
     animation: fade-in-right 1s ease-out;
   }
+
+  footer{
+    background-color: gray;
+  }
