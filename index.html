@@ -1,62 +1,30 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="estilos.css">
-  <link rel="shortcut icon" href="1parfaiticon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+   <link rel="stylesheet" href="sesion.css">
 </head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Mi Sitio Web</a>
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mod.html">Mod</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="new.html">New</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="talentos.html">Talentos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tos.html">Términos de Servicio</a>
-        </li>
-      </ul>
+<body>   
+    <div class="background-image"></div>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <button type="submit">Ingresar</button>
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+        </form>
     </div>
-  </div>
-</nav>
-
-<div class="cover-container">
-  <img src="img/image01.png" alt="" class="cover-image">
-</div>
-<div class="container mt-4">
-  <h1>1Parfait</h1>
-  <div class="fade-in">
-  <p>1Parfait es un grupo de streamers asociados, SIN FINES DE LUCRO, principalmente conformado por VTubers. Estos creadores de contenido digital se unen bajo el estandarte de la pasión por los videojuegos y el entretenimiento interactivo. A través de plataformas de streaming, como Twitch o YouTube, comparten sus experiencias en juegos, realizan transmisiones en directo y crean contenido original para sus seguidores. Lo que distingue a 1Parfait es su enfoque en la comunidad y la diversión, dejando de lado cualquier interés económico. Su objetivo principal es conectar con la audiencia, generar un ambiente de camaradería y promover el disfrute del mundo virtual. Los VTubers, personajes virtuales que representan a los streamers, añaden un toque de originalidad y creatividad a las transmisiones, permitiendo una mayor identificación con el público. Además, 1Parfait organiza eventos especiales, colaboraciones con otros streamers y actividades benéficas, todo con el propósito de fortalecer la comunidad y difundir el espíritu del entretenimiento sin ánimo de lucro. En un mundo donde el entretenimiento digital está en constante evolución, 1Parfait destaca como un oasis de diversión genuina y solidaridad.</p>
-</div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+    <script src="sesion.js"></script>
 </body>
-<footer>1Parfait 2024</footer>
 </html>
